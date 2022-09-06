@@ -4,36 +4,14 @@ import Header from '../components/header';
 import Layout from '../components/layout';
 import Profile from '../components/profile';
 import ProjectPreview, { ProjectPreviewInterface } from '../components/project_preview';
+import content from '../json/data.json';
 
 const Home: NextPage = () => {
   const projectMetadataArray = [];
   
-  projectMetadataArray.push(
-    {
-      title: 'Data Analaysis App',
-      desc: 'Process data in python',
-      linkUrl: '/data_analysis',
-      image: '/coding.jpg'
-    }
-  );
-  
-  projectMetadataArray.push(
-    {
-      title: 'Sound Processing App',
-      desc: 'Cleans up podcast audio',
-      linkUrl: '/sound_processing',
-      image: '/headphones.jpg'
-    }
-  );
-  
-  projectMetadataArray.push(
-    {
-      title: 'Social Media Tracker',
-      desc: 'Tracks time and usage',
-      linkUrl: '/social_tracker',
-      image: '/youtube.jpg'
-    }
-  );
+  for(let i = 0; i < content.projects.length; i++) {
+    projectMetadataArray.push(content.projects[i]);
+  }
   
   const projectPreviewElements = [];
   
@@ -42,7 +20,7 @@ const Home: NextPage = () => {
     const element = <ProjectPreview {...metaData} key={i} />;
     projectPreviewElements.push(element);
   }
-  
+
   return (
     <div>
       <Profile/>

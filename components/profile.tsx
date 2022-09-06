@@ -1,11 +1,10 @@
+import content from '../json/data.json';
+
 const Profile = () => {
     return (
         <div>
-          <div className="text-2xl font-bold text-indigo-600">Hello, world!</div>
-          <div>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </div>
+          <div className="text-2xl font-bold text-indigo-600">{content.index.title}</div>
+          <div dangerouslySetInnerHTML={{__html: content.index.content}}></div>
         </div> 
     );
 };

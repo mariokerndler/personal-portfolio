@@ -7,7 +7,7 @@ const Footer = () => {
 
     return (
         <div className="text-center border-t border-slate-300 p-4 text-slate-400">
-            <div>Designed and build by John</div>
+            <div>Designed and build by Mario</div>
             <Link href="https://github.com/mariokerndler">
                 <a className='text-3xl text-slate-300'>{icon}</a>
             </Link>

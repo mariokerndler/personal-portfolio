@@ -3,9 +3,10 @@ import Link from "next/link";
 
 export interface ProjectPreviewInterface {
     title: string;
-    desc: string;
-    linkUrl: string;
+    description: string;
+    path: string;
     image: string;
+    content: string;
 }
 
 const ProjectPreview = (props: ProjectPreviewInterface) => {
@@ -15,12 +16,12 @@ const ProjectPreview = (props: ProjectPreviewInterface) => {
                 <Image src={props.image} layout="fill" alt=""></Image>
             </div>
             <div className="my-auto">
-                <Link href={props.linkUrl}>
+                <Link href={props.path}>
                     <a className="font-bold underline hover:text-indigo-600">
                         {props.title}
                     </a>
                 </Link>
-                <div>{props.desc}</div>
+                <div>{props.description}</div>
             </div>
         </div> 
     );

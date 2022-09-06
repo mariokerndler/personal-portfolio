@@ -1,0 +1,33 @@
+{
+  "fullname": "Mario Kerndler",
+  "job": "Software Developer",
+  "email": "mariokerndler@gmail.com",
+  "phonenumber": "06603888860",
+  "index": {
+    "title": "Index page",
+    "content": "<p>Some <strong>index</strong> content...</p>"
+  },
+  "projects": [
+    {
+      "title": "Sound Processing App",
+      "description": "Process data in python",
+      "path": "/data_analysis",
+      "image": "/coding.jpg",
+      "content": "<p>Foo content...</p><h2>Heading</h2><p>Some other content...</p>"
+    },
+    {
+      "title": "Sound Processing App",
+      "description": "Cleans up podcast audio",
+      "path": "/sound_processing",
+      "image": "/headphones.jpg",
+      "content": "<p>Foo content...</p><h2>Heading 2</h2><p>Some other content...</p>"
+    },
+    {
+      "title": "Social Media Tracker",
+      "description": "Tracks time and usage",
+      "path": "/social_tracker",
+      "image": "/youtube.jpg",
+      "content": "<p>Foo content...</p><h2>Heading 3</h2><p>Some other content...</p>"
+    }
+  ]
+}
